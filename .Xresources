@@ -1,0 +1,10 @@
+! Use a truetype font and size.
+xterm*faceName: C64 Pro Mono
+xterm*faceSize: 6
+
+UXTerm*vt100.scaleHeight: 3
+
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
+
